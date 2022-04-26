@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Getting Repo Files') {
+        stage('Getting  Files') {
             steps {
                 git branch: "${GIT_BRANCH}", credentialsId: 'github_token', url: 'https://github.com/ahmedKhaled1995/simple_nodejs_app.git'
             }
